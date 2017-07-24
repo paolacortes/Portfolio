@@ -58,7 +58,15 @@ table {
 
 th {
     height: 50px;
+    width: 33.33%;
+}
+
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
     text-align: center;
+    background-color: lightblue;
+    margin-top:20px;
 }
 
 
@@ -79,6 +87,7 @@ window.alert("Welcome to my page!");
     <th style="font-size:200%"><a href="#C4">Bio</a></th>
     <th style="font-size:200%"><a href="#facts">Facts About Me</a></th>
     <th style="font-size:200%"><a href="#links">Some of my favorite links</a></th>
+  </tr>
 </table>
 
 
@@ -98,6 +107,44 @@ window.alert("Welcome to my page!");
       x.style.width = "350px";
   }
   </script>
+
+
+  <button type="button"
+  <p id="expand" onclick="myFunction()">Click me to see more</p>
+
+#test2
+<button onclick="myFunction()">See More</button>
+
+<div id="myDIV">
+This is my DIV element.
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+
+#test
+  <script>
+  function myFunction() {
+      document.getElementById("expand").innerHTML = "<li>I love nature</li>
+    <img src="nature.jpg" style="width:350px";>
+    <li>I aspire to become a web designer</li></p>";
+  }
+  <li>I love nature</li>
+<img src="nature.jpg" style="width:350px";>
+<li>I aspire to become a web designer</li></p>
+  </script>
+
 
 
   <li>I love nature</li>
