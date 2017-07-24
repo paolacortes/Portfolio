@@ -44,28 +44,62 @@
         overflow: hidden;
     }
 
+
+table, td, th {
+    border: .5px solid black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    height: 50px;
+    text-align: center;
+}
+
+
     </style>
   </head>
 
+<script>
+window.alert("Welcome to my page!");
+</script>
 
 <body>
 <header>
   <h1 style="height:45px; text-align:center; font-size:315%; font-family:trebuchetms;">Paola Cortes</h1>
 </header>
 
-<p style="font-size:200%"><a href="#C4">Bio</a></p>
+<table>
+  <tr>
+    <th style="font-size:200%"><a href="#C4">Bio</a></th>
+    <th style="font-size:200%"><a href="#facts">Facts About Me</a></th>
+    <th style="font-size:200%"><a href="#links">Some of my favorite links</a></th>
+</table>
 
-<p style="font-size:200%"><a href="#facts">Facts About Me</a></p>
-
-<p style="font-size:200%"><a href="#links"> Some Of My Favorite Links</a></p>
 
 <h2 style="font-size:250%">Bio</h2>
 <p style="font-size:175%">I was born on June 18, 2001. I love to learn new things. I'm currently 16 years old and go to Information Technology High School.</p>
 
 <h2 id="facts" style="font-size:250%">Facts About Me</h2>
 <ul style="font-size:175%">
+
   <li>I enjoy reading</li>
-  <img src="book.jpg" style="width:350px";>
+  <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="book.jpg" alt="books" style="width:350px";>
+  <script>
+  function bigImg(x) {
+      x.style.width = "500px";
+  }
+  function normalImg(x) {
+      x.style.width = "350px";
+  }
+  </script>
+
+
   <li>I love nature</li>
   <img src="nature.jpg" style="width:350px";>
   <li>I aspire to become a web designer</li>
@@ -75,12 +109,7 @@
 <h2 id="links" style="font-size:250%">Some of my favorite links</h2>
 <p style="font-size:175%"><a href="https://www.google.com.ar/maps/@-34.6158238,-58.4332985,12z?hl=en">Google Maps</a></p>
 <p style="font-size:175%"><a href="http://ithsnyc.org/">Information Technology High School</a></p>
-<p style="font-size:175%"><a href="https://www.netflix.com/">Netflix</a></p>
-
-
-
-
-
+<a href="https://www.netflix.com/"><img src="netflix.png" alt="netflix logo" style="width:350px"></a>
 
 
 
